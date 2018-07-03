@@ -14,7 +14,6 @@ public:
 
 	PlayState(Game* game);
 
-	sf::RectangleShape rect;
 	Map map;
 
 private:
