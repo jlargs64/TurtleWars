@@ -8,6 +8,7 @@
 
 void PlayState::draw(const float dt){
 	game->window.draw(rect);
+	game->window.draw(map);
 }
 
 void PlayState::update(const float dt){
@@ -41,6 +42,9 @@ PlayState::PlayState(Game* game){
 	rect.setPosition(sf::Vector2f(100, 100));
 	rect.setSize(sf::Vector2f(100, 100));
 	rect.setFillColor(sf::Color::Green);
+
+	map.generateMap(5, 5);
+	map.setLocation(sf::Vector2f(200, 100));
 }
 
 void PlayState::PauseGame(){
