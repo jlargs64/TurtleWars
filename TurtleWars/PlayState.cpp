@@ -7,13 +7,7 @@
 
 
 void PlayState::draw(const float dt){
-	sf::RectangleShape rect;
-	rect.setPosition(sf::Vector2f(100, 100));
-	rect.setSize(sf::Vector2f(100, 100));
-	rect.setFillColor(sf::Color::Green);
-
 	game->window.draw(rect);
-
 }
 
 void PlayState::update(const float dt){
@@ -30,7 +24,6 @@ void PlayState::handleInput(){
 			this->game->window.close();
 			break;
 
-			//pause game
 		case sf::Event::KeyPressed:
 			if (event.key.code == sf::Keyboard::Escape)
 				PauseGame();
@@ -45,6 +38,9 @@ void PlayState::handleInput(){
 PlayState::PlayState(Game* game){
 	this->game = game;
 
+	rect.setPosition(sf::Vector2f(100, 100));
+	rect.setSize(sf::Vector2f(100, 100));
+	rect.setFillColor(sf::Color::Green);
 }
 
 void PlayState::PauseGame(){

@@ -125,16 +125,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AerialUnits.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="LandUnits.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MenuState.cpp" />
     <ClCompile Include="PlayState.cpp" />
+    <ClCompile Include="SeaUnits.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="Unit.cpp" />
+    <ClCompile Include="Weapon.cpp" />
+    <ClCompile Include="WeaponList.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AerialUnits.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameState.h" />
+    <ClInclude Include="LandUnits.h" />
     <ClInclude Include="MenuState.h" />
     <ClInclude Include="PlayState.h" />
+    <ClInclude Include="SeaUnits.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="Unit.h" />
+    <ClInclude Include="Weapon.h" />
+    <ClInclude Include="WeaponList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

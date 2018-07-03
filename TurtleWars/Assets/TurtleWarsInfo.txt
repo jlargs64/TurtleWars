@@ -1,0 +1,69 @@
+Units:
+
+The Base
+-Sub classes: Galapagos, Snapping, Basic, Snake, Sea
+-MOVEMENT STATES
+--Moving
+---Cant fire weapons but can relocate
+--Planted
+---Can fire weapons, defense goes up
+--Shell
+---Can fire weapons with limited accuracy, defense goes up even more
+
+UPGRADES
+-WEAPONS
+--Gatling Gun
+---High RPM, medium range, low damage, single target
+--Missile Launcher
+---Low RPM, long range, high damage, aoe
+--AP Rifle
+---Low RPM, long range, high damage, single target
+--Mortar
+---Med RPM, medium range, medium damage, aoe
+--Flamethrower
+---Low RPM, short range, high damage, first 3 tiles in front
+-UTILITIES
+--Repair
+---Only repairs the base
+--Heal AOE
+---Heals allied units
+
+--MINIONS--
+
+LAND
+-Level 1
+--Gecko
+--Box Turtle
+-Level 2
+--Green Sea Turtle
+--Lizard
+--Frog
+-Level 3
+--Toad
+--Alligator
+
+SEA
+-Level 1
+--Tadpole
+-Level 2
+--Green Sea Turtle
+-Level 3
+--Alligator
+
+AIR
+-Level 1
+--Horse Flies
+-Level 2
+--Mosquito
+-Level 3
+--Dragon Fly
+
+PLAN
+1. Movement (also plant, shell/dive)
+2. Tile variety (Land, sea)
+3. Weapons
+4. Attacking
+5. Minions
+6. Multiplayer phase 1: hot seat
+7. Multiplayer phase 2: LAN
+8. Utilities

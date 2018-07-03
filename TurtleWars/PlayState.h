@@ -13,6 +13,8 @@ public:
 	virtual void handleInput();
 
 	PlayState(Game* game);
+
+	sf::RectangleShape rect;
 private:
 	void PauseGame();
 };

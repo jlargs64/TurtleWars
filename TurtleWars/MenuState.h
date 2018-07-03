@@ -10,6 +10,10 @@ public:
 	virtual void draw(const float dt);
 	virtual void update(const float dt);
 	virtual void handleInput();
+
+	sf::Font font;
+	sf::Text mainMenuText;
+	sf::Text pressPlay;
 private:
 	sf::View view;
 	void loadGame();
