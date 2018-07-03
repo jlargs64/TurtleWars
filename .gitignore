@@ -6,7 +6,9 @@
 *.user
 *.userosscache
 *.sln.docstates
-*.vcxproj
+
+TurtleWars/TurtleWars.vcxproj
+TurtleWars/TurtleWars.vcxproj.filters
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
