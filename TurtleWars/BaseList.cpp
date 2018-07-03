@@ -13,6 +13,9 @@ BasicTurtle::BasicTurtle() {
 	name = "Basic Base";
 	movementState = isMoving;
 	movementType = land;
+
+	unitTexture.loadFromFile("Assets/Def_Turtle.png");
+	unitSprite.setTexture(unitTexture);
 }
 
 GalapagosTurtle::GalapagosTurtle() {

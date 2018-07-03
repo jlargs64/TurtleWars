@@ -152,6 +152,15 @@
     <ClInclude Include="Weapon.h" />
     <ClInclude Include="WeaponList.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Def_Turtle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\PixelOperator.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\TurtleWarsInfo.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
