@@ -1,12 +1,22 @@
 #include "LandUnits.h"
 
-
-
-LandUnits::LandUnits()
-{
+Gecko::Gecko(){
 }
 
+BoxTurtle::BoxTurtle(){
+}
 
-LandUnits::~LandUnits()
-{
+Lizard::Lizard(){
+}
+
+Frog::Frog(){
+}
+
+Alligator::Alligator(){
+}
+
+Toad::Toad(){
+}
+
+GreenSeaTurtle::GreenSeaTurtle(){
 }
