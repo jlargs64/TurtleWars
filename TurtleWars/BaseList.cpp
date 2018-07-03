@@ -14,7 +14,7 @@ BasicTurtle::BasicTurtle() {
 	movementState = isMoving;
 	movementType = land;
 
-	unitTexture.loadFromFile("Assets/Def_Turtle.png");
+	unitTexture.loadFromFile("Assets/Sprites/Def_Turtle.png");
 	unitSprite.setTexture(unitTexture);
 }
 

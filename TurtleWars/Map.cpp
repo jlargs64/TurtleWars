@@ -6,7 +6,7 @@ Map::Map() : Map(1, 1) {
 
 Map::Map(int width, int height) {
 	generateMap(width, height);
-	tileTexture.loadFromFile("Assets/Hex.png");
+	tileTexture.loadFromFile("Assets/Sprites/Hex.png");
 }
 
 void Map::generateMap(int width, int height) {
