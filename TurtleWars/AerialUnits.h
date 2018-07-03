@@ -1,8 +1,20 @@
 #pragma once
-class AerialUnits
-{
+#include "Unit.h"
+
+//Level One
+class HorseFlies : public Unit {
 public:
-	AerialUnits();
-	~AerialUnits();
+	HorseFlies();
 };
 
+//Level Two
+class Mosquito : public Unit {
+public:
+	Mosquito();
+};
+
+//Level Three
+class DragonFly : public Unit {
+public:
+	DragonFly();
+};

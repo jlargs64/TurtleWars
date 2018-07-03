@@ -3,7 +3,7 @@
 GatlingGun::GatlingGun(){
 	ammoCapacity = 500;
 	rpm = 10;
-	damage = 25;
+	damage = 30;
 	range = 1;
 	name = "Gatling Gun";
 

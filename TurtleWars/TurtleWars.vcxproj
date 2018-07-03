@@ -126,6 +126,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AerialUnits.cpp" />
+    <ClCompile Include="BaseList.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="LandUnits.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -139,6 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AerialUnits.h" />
+    <ClInclude Include="BaseList.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="LandUnits.h" />

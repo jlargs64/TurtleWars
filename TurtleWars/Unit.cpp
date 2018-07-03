@@ -1,7 +1,17 @@
 #include "Unit.h"
 
 Unit::Unit(){
-
+	weaponCapacity = 0;
+	unitCost = 20;
+	movementRange = 1;
+	health = 100;
+	defense = 10;
+	attackPower = 15;
+	dead = false;
+	critical = false;
+	name = "";
+	movementState = isMoving;
+	movementType = land;
 }
 
 
@@ -10,6 +20,7 @@ Unit::~Unit(){
 }
 
 void Unit::setWeaponCapacity(int num){
+	weaponCapacity = num;
 }
 
 void Unit::setHealth(int health){
@@ -27,6 +38,10 @@ void Unit::setMovementRange(int range){
 void Unit::setUnitSprite(std::string fileName){
 	unitTexture.loadFromFile(fileName);
 	unitSprite.setTexture(unitTexture);
+}
+
+sf::Sprite Unit::getSprite() {
+	return unitSprite;
 }
 
 int Unit::getHealth(){
