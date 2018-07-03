@@ -19,11 +19,6 @@ public:
 	Lizard();
 };
 
-class GreenSeaTurtle : public Unit {
-public:
-	GreenSeaTurtle();
-};
-
 class Frog : public Unit {
 public:
 	Frog();

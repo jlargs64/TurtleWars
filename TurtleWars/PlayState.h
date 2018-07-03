@@ -2,7 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "gameState.h"
-
+#include "Map.h"
 
 class PlayState : public GameState
 {
@@ -14,7 +14,8 @@ public:
 
 	PlayState(Game* game);
 
-	sf::RectangleShape rect;
+	Map map;
+
 private:
 	void PauseGame();
 };

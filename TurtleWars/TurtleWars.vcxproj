@@ -126,9 +126,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AerialUnits.cpp" />
+    <ClCompile Include="BaseList.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="LandUnits.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Map.cpp" />
     <ClCompile Include="MenuState.cpp" />
     <ClCompile Include="PlayState.cpp" />
     <ClCompile Include="SeaUnits.cpp" />
@@ -139,9 +141,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AerialUnits.h" />
+    <ClInclude Include="BaseList.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="LandUnits.h" />
+    <ClInclude Include="Map.h" />
     <ClInclude Include="MenuState.h" />
     <ClInclude Include="PlayState.h" />
     <ClInclude Include="SeaUnits.h" />
@@ -149,6 +153,15 @@
     <ClInclude Include="Unit.h" />
     <ClInclude Include="Weapon.h" />
     <ClInclude Include="WeaponList.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Def_Turtle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\PixelOperator.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\TurtleWarsInfo.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
