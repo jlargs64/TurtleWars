@@ -1,6 +1,6 @@
 Units:
 
-The Base
+The Base ✓
 -Sub classes: Galapagos, Snapping, Basic, Snake, Sea
 -MOVEMENT STATES
 --Moving
@@ -12,15 +12,15 @@ The Base
 
 UPGRADES
 -WEAPONS
---Gatling Gun
+--Gatling Gun ✓
 ---High RPM, medium range, low damage, single target
---Missile Launcher
+--Missile Launcher ✓
 ---Low RPM, long range, high damage, aoe
 --AP Rifle
 ---Low RPM, long range, high damage, single target
 --Mortar
 ---Med RPM, medium range, medium damage, aoe
---Flamethrower
+--Flamethrower ✓
 ---Low RPM, short range, high damage, first 3 tiles in front
 -UTILITIES
 --Repair
@@ -36,7 +36,7 @@ LAND
 --Box Turtle
 -Level 2
 --Green Sea Turtle
---Lizard
+--Lizard ✓
 --Frog
 -Level 3
 --Toad
@@ -52,7 +52,7 @@ SEA
 
 AIR
 -Level 1
---Horse Flies
+--Horse Flies ✓
 -Level 2
 --Mosquito
 -Level 3
