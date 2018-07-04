@@ -21,7 +21,7 @@ void PlayState::draw(const float dt){
 void PlayState::update(const float dt){
 	for (int t = 0; t < units.size(); t++) {
 		for (int u = 0; u < units[t].size(); u++) {
-			//units[t][u]->update(dt);
+			units[t][u]->update(dt);
 		}
 	}
 
@@ -41,6 +41,14 @@ void PlayState::handleInput(){
 				PauseGame();
 			break;
 
+		case sf::Event::MouseMoved:
+			if (true || event.mouseButton.button == sf::Mouse::Left) {
+				std::cout << event.mouseMove.x << ", " << event.mouseMove.y << "\n";
+				sf::Vector2i temp(map.getHexFromLocation(sf::Vector2f(event.mouseMove.x, event.mouseMove.y)));
+				std::cout << temp.x << ", " << temp.y << "\n-----\n";
+				units[0][0]->hex = temp;
+			}
+			break;
 		}
 	}
 
@@ -57,9 +65,10 @@ PlayState::PlayState(Game* game){
 	turn = 1;
 
 	units.resize(teams);
-	units[0].push_back(new Gecko());
-	units[0][0]->hex.x = 2;
-	units[0][0]->hex.y = 3;
+	units[0].push_back(new Lizard());
+	units[0][0]->hex.x = 0;
+	units[0][0]->hex.y = 0;
+	units[0][0]->map = &map;
 }
 
 PlayState::~PlayState() {

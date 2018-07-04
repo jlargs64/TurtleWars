@@ -35,6 +35,12 @@ sf::Vector2f Map::getHexLocation(sf::Vector2i hex) {
 	return sf::Vector2f(position.x + hex.x * 100.f - 50.f * (int(std::round(hex.y)) % 2), position.y + hex.y * 56.f);
 }
 
+sf::Vector2i Map::getHexFromLocation(sf::Vector2f location) {
+	int y = std::round((location.y - position.y) / 56);
+	int x = std::round((location.x - position.x + 50.f * (y % 2)) / 100.f);
+	return sf::Vector2i(x, y);
+}
+
 void Map::draw(sf::RenderTarget &target, sf::RenderStates states) const {
 	for (int y = 0; y < tiles.size(); y++) {
 		for (int x = 0; x < tiles[y].size(); x++) {

@@ -2,6 +2,8 @@
 #include <string>
 #include "SFML/Graphics.hpp"
 #include "Weapon.h"
+#include "Map.h"
+
 class Unit
 {
 
@@ -15,6 +17,8 @@ public:
 	enum movementTypes { land = 0, swim, fly, amphibious } movementType;
 	
 	void update(float dt);
+
+	Map *map;
 
 	int getHealth();
 	int getMovementRange();

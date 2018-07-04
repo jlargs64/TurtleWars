@@ -12,6 +12,7 @@ public:
 	void generateMap(int width, int height);
 	void setLocation(sf::Vector2f position);
 	sf::Vector2f getHexLocation(sf::Vector2i hex);
+	sf::Vector2i getHexFromLocation(sf::Vector2f location);
 
 	std::vector<std::vector<Tile>> tiles;
 

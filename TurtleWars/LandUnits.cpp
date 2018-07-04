@@ -7,9 +7,8 @@ Gecko::Gecko(){
 	health = 75;
 	name = "Gecko";
 
-	unitTexture.loadFromFile("Assets/Sprites/Def_Turtle.png");
+	//unitTexture.loadFromFile();
 	unitSprite.setTexture(unitTexture);
-	unitSprite.setOrigin(sf::Vector2f(50, 50));
 }
 
 BoxTurtle::BoxTurtle(){
@@ -36,6 +35,8 @@ Lizard::Lizard(){
 
 	unitTexture.loadFromFile("Assets/Sprites/Lizard_Move.png");
 	unitSprite.setTexture(unitTexture);
+	unitSprite.setTextureRect(sf::IntRect(0, 0, 100, 100));
+	unitSprite.setOrigin(sf::Vector2f(50, 50));
 }
 
 Frog::Frog(){

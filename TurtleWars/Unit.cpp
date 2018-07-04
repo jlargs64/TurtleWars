@@ -45,7 +45,9 @@ sf::Sprite Unit::getSprite() {
 }
 
 void Unit::update(float dt) {
-	
+	if (map) {
+		unitSprite.setPosition(map->getHexLocation(hex));
+	}
 }
 
 int Unit::getHealth(){
