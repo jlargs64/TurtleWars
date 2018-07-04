@@ -6,6 +6,10 @@ Game::Game() {
 	window.create(sf::VideoMode(800,600), "Turtle Wars");
 	window.setFramerateLimit(60);
 
+	sf::Image icon;
+	icon.loadFromFile("Assets/Sprites/Def_Turtle.png");
+	
+	//window.setIcon();
 }
 
 Game::~Game(){

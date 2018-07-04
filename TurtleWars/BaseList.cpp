@@ -14,7 +14,7 @@ BasicTurtle::BasicTurtle() {
 	movementState = isMoving;
 	movementType = land;
 
-	unitTexture.loadFromFile("Assets/Sprites/Def_Turtle.png");
+	unitTexture.loadFromFile("Assets/Sprites/Def_Turtle_Move.png");
 	unitSprite.setTexture(unitTexture);
 }
 
@@ -31,6 +31,9 @@ GalapagosTurtle::GalapagosTurtle() {
 	name = "Galapagos Turtle";
 	movementState = isMoving;
 	movementType = land;
+
+	unitTexture.loadFromFile("Assets/Sprites/Gala_Turtle_Move.png");
+	unitSprite.setTexture(unitTexture);
 }
 
 SnappingTurtle::SnappingTurtle() {
@@ -46,6 +49,9 @@ SnappingTurtle::SnappingTurtle() {
 	name = "Snapping Turtle";
 	movementState = isMoving;
 	movementType = land;
+
+	unitTexture.loadFromFile("Assets/Sprites/Snap_Turtle_Move.png");
+	unitSprite.setTexture(unitTexture);
 }
 
 SnakeTurtle::SnakeTurtle() {
@@ -61,6 +67,9 @@ SnakeTurtle::SnakeTurtle() {
 	name = "Snake Turtle";
 	movementState = isMoving;
 	movementType = land;
+
+	unitTexture.loadFromFile("Assets/Sprites/Snake_Turtle_Move.png");
+	unitSprite.setTexture(unitTexture);
 }
 
 SeaTurtle::SeaTurtle() {
@@ -76,4 +85,7 @@ SeaTurtle::SeaTurtle() {
 	name = "Sea Turtle";
 	movementState = isMoving;
 	movementType = amphibious;
+
+	unitTexture.loadFromFile("Assets/Sprites/Sea_Turtle_Move.png");
+	unitSprite.setTexture(unitTexture);
 }

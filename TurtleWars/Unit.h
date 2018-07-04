@@ -14,6 +14,8 @@ public:
 	enum movementStates { isMoving = 0, isPlanted, inShell } movementState;
 	enum movementTypes { land = 0, swim, fly, amphibious } movementType;
 	
+	void update(float dt);
+
 	int getHealth();
 	int getMovementRange();
 	bool isDead();

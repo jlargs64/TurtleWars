@@ -9,7 +9,7 @@ HorseFlies::HorseFlies() {
 	name = "Horse Flies";
 	movementType = fly;
 
-	//unitTexture.loadFromFile();
+	unitTexture.loadFromFile("Assets/Sprites/Fly_Swam.png");
 	unitSprite.setTexture(unitTexture);
 }
 

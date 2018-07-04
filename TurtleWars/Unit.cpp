@@ -44,6 +44,10 @@ sf::Sprite Unit::getSprite() {
 	return unitSprite;
 }
 
+void Unit::update(float dt) {
+	
+}
+
 int Unit::getHealth(){
 	return health;
 }

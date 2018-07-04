@@ -33,7 +33,7 @@ Lizard::Lizard(){
 	health = 100;
 	name = "Lizard";
 
-	//unitTexture.loadFromFile();
+	unitTexture.loadFromFile("Assets/Sprites/Lizard_Move.png");
 	unitSprite.setTexture(unitTexture);
 }
 
