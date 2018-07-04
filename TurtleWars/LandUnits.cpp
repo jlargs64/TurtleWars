@@ -7,8 +7,9 @@ Gecko::Gecko(){
 	health = 75;
 	name = "Gecko";
 
-	//unitTexture.loadFromFile();
+	unitTexture.loadFromFile("Assets/Sprites/Def_Turtle.png");
 	unitSprite.setTexture(unitTexture);
+	unitSprite.setOrigin(sf::Vector2f(50, 50));
 }
 
 BoxTurtle::BoxTurtle(){
