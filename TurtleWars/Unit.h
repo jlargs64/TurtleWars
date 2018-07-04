@@ -21,6 +21,7 @@ public:
 	std::string getName();
 	sf::Sprite getSprite();
 
+	sf::Vector2i hex;
 	int health;
 	int attackPower;
 	int defense;
